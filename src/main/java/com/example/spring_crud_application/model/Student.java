@@ -15,5 +15,7 @@ public class Student {
     private String id;
     private String name;
     private String city;
+    private String mobile;
+     private String email;
 
 }
