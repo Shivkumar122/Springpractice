@@ -3,6 +3,8 @@ import lombok.*;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.util.List;
+
 @Data
 @Getter
 @Setter
@@ -15,7 +17,13 @@ public class Student {
     private String id;
     private String name;
     private String city;
-    private String mobile;
-     private String email;
+    private List<String> subjectRefs;
+    private String collegeRef;
+    private String email;
+    private Gender gender;
+
+    public enum Gender {
+
+    }
 
 }
